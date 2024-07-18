@@ -1,0 +1,15 @@
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99999px;
+    padding: 3px 9px;
+
+    & > svg {
+        font-size: 0.85rem;
+    }
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
