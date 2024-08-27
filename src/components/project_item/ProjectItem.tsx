@@ -24,6 +24,8 @@ import StripeTag from "../tags/StripeTag";
 import FramerTag from "../tags/FramerTag";
 import ReactSpringTag from "../tags/ReactSpringTag";
 import DownshiftTag from "../tags/DownshiftTag";
+import TailwindTag from "../tags/TailwindTag";
+import ZodTag from "../tags/ZodTag";
 
 const tagsIcons = {
   react: (key: string) => <ReactTag key={key} />,
@@ -46,6 +48,8 @@ const tagsIcons = {
   framer: (key: string) => <FramerTag key={key} />,
   spring: (key: string) => <ReactSpringTag key={key} />,
   downshift: (key: string) => <DownshiftTag key={key} />,
+  tailwind: (key: string) => <TailwindTag key={key} />,
+  zod: (key: string) => <ZodTag key={key} />,
 };
 
 interface ProjectItemProps {

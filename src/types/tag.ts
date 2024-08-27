@@ -18,4 +18,6 @@ export type TagType =
   | "stripe"
   | "framer"
   | "spring"
-  | "downshift";
+  | "downshift"
+  | "tailwind"
+  | "zod";

@@ -61,10 +61,27 @@ export default function Projects() {
 
   const serachBarTags: TagType[] = ["react", "axios", "spring", "downshift"];
 
+  const chefAiTags: TagType[] = [
+    "react",
+    "nextjs",
+    "typescript",
+    "zustand",
+    "tailwind",
+    "zod",
+  ];
+
   return (
     <section id="projects">
       <SectionHeader icon={<CodeIcon />} title="Projects" />
       <div className={styles.projectsList}>
+        <ProjectItem
+          title="Chef AI"
+          image="chef-ai.webp"
+          description="A chef assistant made with AI, pick your ingredients and it will generate recipes for you."
+          tags={chefAiTags}
+          previewUrl="https://chef-ai-ten.vercel.app/"
+          projectUrl="https://github.com/hugo-85/chef-ai"
+        />
         <ProjectItem
           title="Javascript Quiz!"
           image="javascript_quiz.webp"
