@@ -26,6 +26,10 @@ import ReactSpringTag from "../tags/ReactSpringTag";
 import DownshiftTag from "../tags/DownshiftTag";
 import TailwindTag from "../tags/TailwindTag";
 import ZodTag from "../tags/ZodTag";
+import ViteTag from "../tags/ViteTag";
+import ExpoTag from "../tags/ExpoTag";
+import AppwriteTag from "../tags/AppwriteTag";
+import HookFormTag from "../tags/HookFormTag";
 
 const tagsIcons = {
   react: (key: string) => <ReactTag key={key} />,
@@ -50,6 +54,10 @@ const tagsIcons = {
   downshift: (key: string) => <DownshiftTag key={key} />,
   tailwind: (key: string) => <TailwindTag key={key} />,
   zod: (key: string) => <ZodTag key={key} />,
+  vite: (key: string) => <ViteTag key={key} />,
+  expo: (key: string) => <ExpoTag key={key} />,
+  appwrite: (key: string) => <AppwriteTag key={key} />,
+  hookform: (key: string) => <HookFormTag key={key} />,
 };
 
 interface ProjectItemProps {

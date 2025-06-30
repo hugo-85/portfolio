@@ -20,4 +20,8 @@ export type TagType =
   | "spring"
   | "downshift"
   | "tailwind"
-  | "zod";
+  | "zod"
+  | "vite"
+  | "expo"
+  | "appwrite"
+  | "hookform";
