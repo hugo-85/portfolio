@@ -17,7 +17,7 @@ export default function About() {
             Computer Science Degree.
           </p>
           <p>
-            I have been working with web apps for more than 12 year, always
+            I have been working with web apps for more than 13 year, always
             trying to keep up date with the more usable languages and
             technologies. In my beginners days started with php and now develop
             apps with React. I'm an avid learner and agile software developer.

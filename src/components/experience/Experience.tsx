@@ -17,7 +17,7 @@ export default function Experience() {
             company="Frubana"
             location="Latam"
             rol="Frontend Developer"
-            range="Oct 2021 - Mar 2024"
+            range="Oct 2021 - Jul 2025"
             description="I worked as a web developer helping to build, maintain and support complex dashboards, which not only helped organize sales forces but also managed e-commerce products and users.
             I also developed new features for the e-commerce app and helped to maintain it."
           />
