@@ -15,7 +15,7 @@ export default function PersonalInfo() {
       </div>
       <h1>Hugo Margiotta</h1>
       <p className={styles.myInfo}>
-        Professional with more than <strong>12 years of experience</strong>. I'm
+        Professional with more than <strong>13 years of experience</strong>. I'm
         from Patagonia in Argentina 🇦🇷. Graduate in{" "}
         <strong>Computer Science</strong>, specialized in creating fully
         interactive web applications.

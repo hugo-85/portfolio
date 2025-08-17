@@ -6,6 +6,7 @@ const javascriptQuizTags: TagType[] = [
   "materialui",
   "typescript",
   "zustand",
+  "reactTesting",
   "jest",
   "msw",
 ];
@@ -23,6 +24,7 @@ const billingTags: TagType[] = [
   "nextjs",
   "materialui",
   "typescript",
+  "reactTesting",
   "jest",
   "msw",
   "mysql",
@@ -72,6 +74,8 @@ const AISocialNetworkTags: TagType[] = [
   "tailwind",
   "appwrite",
   "hookform",
+  "reactTesting",
+  "jest",
 ];
 
 export const projectsConfigs = [

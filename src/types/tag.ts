@@ -24,4 +24,5 @@ export type TagType =
   | "vite"
   | "expo"
   | "appwrite"
-  | "hookform";
+  | "hookform"
+  | "reactTesting";

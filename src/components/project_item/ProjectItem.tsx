@@ -30,6 +30,7 @@ import ViteTag from "../tags/ViteTag";
 import ExpoTag from "../tags/ExpoTag";
 import AppwriteTag from "../tags/AppwriteTag";
 import HookFormTag from "../tags/HookFormTag";
+import ReactTestingTag from "../tags/ReactTestingTag";
 
 const tagsIcons = {
   react: (key: string) => <ReactTag key={key} />,
@@ -58,6 +59,7 @@ const tagsIcons = {
   expo: (key: string) => <ExpoTag key={key} />,
   appwrite: (key: string) => <AppwriteTag key={key} />,
   hookform: (key: string) => <HookFormTag key={key} />,
+  reactTesting: (key: string) => <ReactTestingTag key={key} />,
 };
 
 interface ProjectItemProps {
