@@ -73,6 +73,7 @@ interface ProjectItemProps {
   image: string;
   projectUrl?: string;
   previewUrl?: string;
+  npmUrl?: string;
 }
 
 const ProjectItem: FC<ProjectItemProps> = ({
@@ -82,6 +83,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
   image,
   projectUrl,
   previewUrl,
+  npmUrl,
 }) => {
   return (
     <article className={styles.projectItem}>
@@ -104,6 +106,9 @@ const ProjectItem: FC<ProjectItemProps> = ({
               label="Preview"
               url={previewUrl}
             />
+          )}
+          {npmUrl && (
+            <IconButton icon={<ExternalLinkIcon />} label="NPM" url={npmUrl} />
           )}
         </footer>
       </div>

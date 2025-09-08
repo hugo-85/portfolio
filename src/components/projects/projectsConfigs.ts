@@ -94,6 +94,7 @@ export const projectsConfigs = [
     image: "mcp_server_randomme.webp",
     tags: ["typescript", "mpc"],
     projectUrl: "https://github.com/hugo-85/mcp-randomuserme",
+    npmUrl: "https://www.npmjs.com/package/mcp-randomuserme",
   },
   {
     title: "Digital Wallet",
