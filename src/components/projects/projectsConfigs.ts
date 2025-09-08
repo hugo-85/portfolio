@@ -78,7 +78,22 @@ const AISocialNetworkTags: TagType[] = [
   "jest",
 ];
 
+const digitalWalletTags: TagType[] = [
+  "react",
+  "typescript",
+  "tailwind",
+  "tanStackQuery",
+  "zustand",
+];
+
 export const projectsConfigs = [
+  {
+    title: "Digital Wallet",
+    image: "digital_wallet.webp",
+    description: "A simple layout idea for a digital wallet app",
+    tags: digitalWalletTags,
+    projectUrl: "https://github.com/hugo-85/wayniwallet",
+  },
   {
     title: "AI Social Network",
     image: "ai_social_network.webp",

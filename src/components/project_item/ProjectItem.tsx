@@ -31,6 +31,7 @@ import ExpoTag from "../tags/ExpoTag";
 import AppwriteTag from "../tags/AppwriteTag";
 import HookFormTag from "../tags/HookFormTag";
 import ReactTestingTag from "../tags/ReactTestingTag";
+import TanStackQueryTag from "../tags/TanStackQueryTag";
 
 const tagsIcons = {
   react: (key: string) => <ReactTag key={key} />,
@@ -60,6 +61,7 @@ const tagsIcons = {
   appwrite: (key: string) => <AppwriteTag key={key} />,
   hookform: (key: string) => <HookFormTag key={key} />,
   reactTesting: (key: string) => <ReactTestingTag key={key} />,
+  tanStackQuery: (key: string) => <TanStackQueryTag key={key} />,
 };
 
 interface ProjectItemProps {

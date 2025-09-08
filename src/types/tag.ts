@@ -25,4 +25,5 @@ export type TagType =
   | "expo"
   | "appwrite"
   | "hookform"
-  | "reactTesting";
+  | "reactTesting"
+  | "tanStackQuery";
