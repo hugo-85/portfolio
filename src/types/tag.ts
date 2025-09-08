@@ -26,4 +26,5 @@ export type TagType =
   | "appwrite"
   | "hookform"
   | "reactTesting"
-  | "tanStackQuery";
+  | "tanStackQuery"
+  | "mcp";

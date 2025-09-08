@@ -32,6 +32,7 @@ import AppwriteTag from "../tags/AppwriteTag";
 import HookFormTag from "../tags/HookFormTag";
 import ReactTestingTag from "../tags/ReactTestingTag";
 import TanStackQueryTag from "../tags/TanStackQueryTag";
+import MpcTag from "../tags/MpcTag";
 
 const tagsIcons = {
   react: (key: string) => <ReactTag key={key} />,
@@ -62,6 +63,7 @@ const tagsIcons = {
   hookform: (key: string) => <HookFormTag key={key} />,
   reactTesting: (key: string) => <ReactTestingTag key={key} />,
   tanStackQuery: (key: string) => <TanStackQueryTag key={key} />,
+  mpc: (key: string) => <MpcTag key={key} />,
 };
 
 interface ProjectItemProps {

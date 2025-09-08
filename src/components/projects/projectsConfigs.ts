@@ -88,6 +88,14 @@ const digitalWalletTags: TagType[] = [
 
 export const projectsConfigs = [
   {
+    title: "Randomme MCP Server",
+    description:
+      "An MCP server to generate confiable and consistent random users for development and testing.",
+    image: "mcp_server_randomme.webp",
+    tags: ["typescript", "mpc"],
+    projectUrl: "https://github.com/hugo-85/mcp-randomuserme",
+  },
+  {
     title: "Digital Wallet",
     image: "digital_wallet.webp",
     description: "A simple layout idea for a digital wallet app",
