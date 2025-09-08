@@ -86,13 +86,15 @@ const digitalWalletTags: TagType[] = [
   "zustand",
 ];
 
+const mcpServerTags: TagType[] = ["typescript", "mcp", "zod"];
+
 export const projectsConfigs = [
   {
     title: "Randomme MCP Server",
     description:
       "An MCP server to generate confiable and consistent random users for development and testing.",
     image: "mcp_server_randomme.webp",
-    tags: ["typescript", "mpc"],
+    tags: mcpServerTags,
     projectUrl: "https://github.com/hugo-85/mcp-randomuserme",
     npmUrl: "https://www.npmjs.com/package/mcp-randomuserme",
   },
