@@ -32,7 +32,9 @@ import AppwriteTag from "../tags/AppwriteTag";
 import HookFormTag from "../tags/HookFormTag";
 import ReactTestingTag from "../tags/ReactTestingTag";
 import TanStackQueryTag from "../tags/TanStackQueryTag";
-import MpcTag from "../tags/MpcTag";
+import McpTag from "../tags/McpTag";
+import NodejsTag from "../tags/NodejsTag";
+import ExpressTag from "../tags/ExpressTag";
 
 const tagsIcons = {
   react: (key: string) => <ReactTag key={key} />,
@@ -63,7 +65,9 @@ const tagsIcons = {
   hookform: (key: string) => <HookFormTag key={key} />,
   reactTesting: (key: string) => <ReactTestingTag key={key} />,
   tanStackQuery: (key: string) => <TanStackQueryTag key={key} />,
-  mpc: (key: string) => <MpcTag key={key} />,
+  mcp: (key: string) => <McpTag key={key} />,
+  nodejs: (key: string) => <NodejsTag key={key} />,
+  express: (key: string) => <ExpressTag key={key} />,
 };
 
 interface ProjectItemProps {
@@ -71,6 +75,7 @@ interface ProjectItemProps {
   tags: TagType[];
   description: string;
   image: string;
+  imageSmall: string;
   projectUrl?: string;
   previewUrl?: string;
   npmUrl?: string;
@@ -81,14 +86,28 @@ const ProjectItem: FC<ProjectItemProps> = ({
   tags,
   description,
   image,
+  imageSmall,
   projectUrl,
   previewUrl,
   npmUrl,
 }) => {
+  const handleOnLoad = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    e.currentTarget.style.opacity = "1";
+    e.currentTarget.setAttribute("complete", "true");
+  };
+
   return (
     <article className={styles.projectItem}>
-      <div className={styles.projectItemImage}>
-        <img src={`/imgs/${image}`} />
+      <div
+        className={styles.projectItemImage}
+        style={{ backgroundImage: `url(/imgs/${imageSmall})` }}
+      >
+        <img
+          src={`/imgs/${image}`}
+          loading="lazy"
+          onLoad={handleOnLoad}
+          alt={title}
+        />
       </div>
       <div className={styles.projectItemInfo}>
         <h3>{title}</h3>

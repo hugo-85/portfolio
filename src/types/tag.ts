@@ -27,4 +27,6 @@ export type TagType =
   | "hookform"
   | "reactTesting"
   | "tanStackQuery"
-  | "mcp";
+  | "mcp"
+  | "nodejs"
+  | "express";

@@ -37,15 +37,56 @@
 }
 
 .projectItemImage {
+    position: relative;
     width: 400px;
     min-width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
 
     & > img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         aspect-ratio: 16/9;
         border-radius: 20px;
+        opacity: 0;
     }
+}
+
+.projectItemImage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: pulse 2.5s infinite;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.projectItemImage img {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.projectItemImage:has(img[complete="true"])::before {
+  opacity: 0;
+  animation: none !important;
+  content: none !important;
 }
 
 .projectItemInfo {
